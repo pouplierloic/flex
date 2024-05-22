@@ -1,0 +1,51 @@
+
+/* -----------Custom class div ---------- */
+
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Ajuste la largeur en tenant compte des marges */
+    box-sizing: border-box;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.chaussure-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-body {
+    width: 100%;
+} 
+
+.cta {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}
+
+
+/* -------------Custom class elements ------------- */
