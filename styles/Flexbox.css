@@ -248,6 +248,9 @@ header {
         width: calc(50% - 40px);
         /* Deux cards par ligne */
     }
+    .main-section {
+        padding: 20px 20px;
+    }
 }
 
 @media (max-width: 480px) {
