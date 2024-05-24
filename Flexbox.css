@@ -1,23 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-/* -----------Custom class div ---------- */
+/* Ton CSS existant va ici */
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    padding: 5px 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo img {
+    width: 50px;
+    /* Ajuste la taille du logo */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    /* Ajoute de l'espace entre les liens */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #007BFF;
+    /* Change la couleur au hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #F2F9FF;
+    color: #000000;
+    padding: 30px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    margin-bottom: 20px;
+    padding-right: 10%;
+}
+
+.hero-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+.hero-image img {
+    width: 100%;
+    max-width: 350px;
+    /* Ajuste la largeur maximale de l'image */
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .navbar {
+        padding: 10px 50px;
+        /* Ajuste le padding pour les écrans plus larges */
+    }
+
+    .nav-links {
+        margin-left: auto;
+        /* Aligne les liens à droite pour les écrans plus larges */
+    }
+
+    .hero-content {
+        flex-direction: row;
+        /* Affiche les éléments en ligne pour les écrans plus larges */
+        text-align: left;
+        /* Ajuste le texte à gauche pour les écrans plus larges */
+    }
+
+    .hero-text {
+        margin-right: 50px;
+        /* Ajoute de l'espace entre le texte et l'image pour les écrans plus larges */
+        text-align: initial;
+        /* Réinitialise le texte à gauche pour les écrans plus larges */
+    }
+
+    .hero-text h1 {
+        font-size: 3.5em;
+        /* Ajuste la taille du titre pour les écrans plus larges */
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+        /* Ajuste la taille du sous-titre pour les écrans plus larges */
+    }
+}
 
 
 .main-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 100px;
 }
 
 .card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 20px 5px;
     padding: 20px;
-    width: calc(33.333% - 40px); /* Ajuste la largeur en tenant compte des marges */
+    /* Réduit le padding des cards */
+    width: calc(30% - 40px);
+    /* Garde la largeur */
     box-sizing: border-box;
+    transition: transform 0.3s ease;
+    /* Ajoute une transition pour l'effet de hover */
 }
+
+.card:hover {
+    transform: scale(1.05);
+    /* Agrandit légèrement la card au hover */
+}
+
 
 .card-img {
     width: 100%;
@@ -25,19 +158,39 @@
 
 .chaussure-img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    /* Fixe la hauteur de l'image pour réduire la hauteur totale */
+    object-fit: cover;
+    /* Assure que l'image s'ajuste bien */
     border-radius: 8px;
 }
 
 .card-body {
     width: 100%;
-} 
+    padding: 10px 0px;
+    /* Réduit le padding interne du corps de la card */
+}
+
+.card-body h3 {
+    margin: 10px 0;
+    /* Réduit la marge du titre */
+    font-size: 1.2em;
+    /* Ajuste la taille de la police du titre si nécessaire */
+}
+
+.card-body p {
+    margin: 10px 0;
+    /* Réduit la marge de la description */
+    font-size: 0.9em;
+    /* Ajuste la taille de la police de la description si nécessaire */
+}
 
 .cta {
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
+    /* Réduit le padding du bouton */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -47,5 +200,17 @@
     background-color: #0056b3;
 }
 
+/* Media queries pour les écrans plus petits */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px);
+        /* Deux cards par ligne */
+    }
+}
 
-/* -------------Custom class elements ------------- */
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px);
+        /* Une card par ligne */
+    }
+}
