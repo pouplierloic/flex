@@ -5,9 +5,8 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Ton CSS existant va ici */
 
-/* Navbar */
+/*---------- Navbar ---------- */
 header {
     background-color: #ffffff;
     padding: 5px 100px;
@@ -49,7 +48,7 @@ header {
     /* Change la couleur au hover */
 }
 
-/* Hero Section */
+/*--------- Hero Section ---------*/
 .hero-section {
     background-color: #F2F9FF;
     color: #000000;
@@ -124,7 +123,7 @@ header {
     }
 }
 
-
+/* ----------Section avec les cards ----------*/
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +137,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 5px;
     padding: 20px;
-    /* Réduit le padding des cards */
     width: calc(30% - 40px);
     /* Garde la largeur */
     box-sizing: border-box;
@@ -159,7 +157,6 @@ header {
 .chaussure-img {
     width: 100%;
     height: 150px;
-    /* Fixe la hauteur de l'image pour réduire la hauteur totale */
     object-fit: cover;
     /* Assure que l'image s'ajuste bien */
     border-radius: 8px;
@@ -173,14 +170,12 @@ header {
 
 .card-body h3 {
     margin: 10px 0;
-    /* Réduit la marge du titre */
     font-size: 1.2em;
     /* Ajuste la taille de la police du titre si nécessaire */
 }
 
 .card-body p {
     margin: 10px 0;
-    /* Réduit la marge de la description */
     font-size: 0.9em;
     /* Ajuste la taille de la police de la description si nécessaire */
 }
@@ -190,7 +185,6 @@ header {
     color: white;
     border: none;
     padding: 8px 12px;
-    /* Réduit le padding du bouton */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -200,7 +194,7 @@ header {
     background-color: #0056b3;
 }
 
-/* Footer Section */
+/*------------ Footer Section -----------*/
 .footer {
     background-color: #F2F9FF;
     color: #000000;
@@ -242,7 +236,7 @@ header {
     color: #007BFF;
 }
 
-/* Media queries pour les écrans plus petits */
+/*-------- Media queries pour etre responsive --------*/
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 40px);
