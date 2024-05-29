@@ -125,23 +125,26 @@ header {
 
 /* ----------Section avec les cards ----------*/
 .main-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px 100px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    /* justify-content: space-around;*/
+    padding: 20px 100px; 
 }
 
 .card {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: column;
     margin: 20px 5px;
-    padding: 20px;
-    width: calc(30% - 40px);
-    /* Garde la largeur */
-    box-sizing: border-box;
     transition: transform 0.3s ease;
     /* Ajoute une transition pour l'effet de hover */
+    border-radius: 8px;
+    padding: 2rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .card:hover {
@@ -165,7 +168,6 @@ header {
 .card-body {
     width: 100%;
     padding: 10px 0px;
-    /* Réduit le padding interne du corps de la card */
 }
 
 .card-body h3 {
@@ -237,20 +239,18 @@ header {
 }
 
 /*-------- Media queries pour etre responsive --------*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .card {
         width: calc(50% - 40px);
-        /* Deux cards par ligne */
     }
     .main-section {
         padding: 20px 20px;
     }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .card {
         width: calc(100% - 40px);
-        /* Une card par ligne */
     }
 
     header {
@@ -265,4 +265,4 @@ header {
         padding: 20px 20px;
     }
 
-}
+} */
