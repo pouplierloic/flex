@@ -9,7 +9,7 @@ body {
 /*---------- Navbar ---------- */
 header {
     background-color: #ffffff;
-    padding: 5px 90px;
+    padding: 2px 90px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,9 +20,22 @@ header {
     background-color: rgb(255, 255, 255);
 }
 
+.lien-logo {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo{
+    display: flex;
+}
+
 .logo img {
-    width: 50px;
+    width: 70px;
     /* Ajuste la taille du logo */
+}
+
+.logo p {
+    margin-top: 25px;
 }
 
 .nav-links {
@@ -136,7 +149,7 @@ header {
 .card {
     background-color: #fff;
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     margin: 20px 5px;
     transition: transform 0.3s ease;
     /* Ajoute une transition pour l'effet de hover */
@@ -150,7 +163,6 @@ header {
     transform: scale(1.05);
     /* Agrandit légèrement la card au hover */
 }
-
 
 .card-img {
     width: 100%;
@@ -167,18 +179,30 @@ header {
 .card-body {
     width: 100%;
     padding: 10px ;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-body h3 {
     margin: 10px 0;
     font-size: 1.2em;
+    font-weight: 500;
     /* Ajuste la taille de la police du titre si nécessaire */
 }
 
 .card-body p {
     margin: 10px 0;
     font-size: 0.9em;
+    text-align: justify;
+    margin-right: 30px;
+
+    color :#555555
     /* Ajuste la taille de la police de la description si nécessaire */
+}
+
+.card-cta-container {
+    align-self: flex-end;
+    margin-right: 10px;
 }
 
 .card-cta {
