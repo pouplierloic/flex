@@ -9,7 +9,7 @@ body {
 /*---------- Navbar ---------- */
 header {
     background-color: #ffffff;
-    padding: 5px 100px;
+    padding: 5px 90px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -52,86 +52,85 @@ header {
 .hero-section {
     background-color: #F2F9FF;
     color: #000000;
-    padding: 30px 20px;
+    padding: 30px 100px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
 .hero-text {
-    margin-bottom: 20px;
-    padding-right: 10%;
+    margin-right: 50px;
+    padding-left: 50px;
 }
 
 .hero-text h1 {
-    font-size: 2em;
+    font-size: 3.5em;
     margin-bottom: 10px;
 }
 
 .hero-text h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
+    font-weight: normal;
+    color: #555555;
 }
 
+.hero-text div {
+    display: flex;
+    gap: 10px;
+}
+
+.cta {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}
+
+.cta-secondary {
+    background-color: #F2F9FF;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    padding: 7px 11px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.hero-image {
+    text-align: right;
+}
 
 .hero-image img {
     width: 100%;
     max-width: 350px;
-    /* Ajuste la largeur maximale de l'image */
 }
 
-/* Media queries */
-@media (min-width: 768px) {
-    .navbar {
-        padding: 10px 50px;
-        /* Ajuste le padding pour les écrans plus larges */
-    }
 
-    .nav-links {
-        margin-left: auto;
-        /* Aligne les liens à droite pour les écrans plus larges */
-    }
-
-    .hero-content {
-        flex-direction: row;
-        /* Affiche les éléments en ligne pour les écrans plus larges */
-        text-align: left;
-        /* Ajuste le texte à gauche pour les écrans plus larges */
-    }
-
-    .hero-text {
-        margin-right: 50px;
-        /* Ajoute de l'espace entre le texte et l'image pour les écrans plus larges */
-        text-align: initial;
-        /* Réinitialise le texte à gauche pour les écrans plus larges */
-    }
-
-    .hero-text h1 {
-        font-size: 3.5em;
-        /* Ajuste la taille du titre pour les écrans plus larges */
-    }
-
-    .hero-text h2 {
-        font-size: 2em;
-        /* Ajuste la taille du sous-titre pour les écrans plus larges */
-    }
-}
 
 /* ----------Section avec les cards ----------*/
 .main-section {
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     /* justify-content: space-around;*/
-    padding: 20px 100px; 
+    padding: 20px 50px; 
 }
 
 .card {
@@ -142,7 +141,7 @@ header {
     transition: transform 0.3s ease;
     /* Ajoute une transition pour l'effet de hover */
     border-radius: 8px;
-    padding: 2rem; 
+    padding: 1rem; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
@@ -167,7 +166,7 @@ header {
 
 .card-body {
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px ;
 }
 
 .card-body h3 {
@@ -182,7 +181,7 @@ header {
     /* Ajuste la taille de la police de la description si nécessaire */
 }
 
-.cta {
+.card-cta {
     background-color: #007BFF;
     color: white;
     border: none;
@@ -192,7 +191,7 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.cta:hover {
+.card-cta:hover {
     background-color: #0056b3;
 }
 
@@ -237,32 +236,3 @@ header {
 .footer-links a:hover {
     color: #007BFF;
 }
-
-/*-------- Media queries pour etre responsive --------*/
-/* @media (max-width: 768px) {
-    .card {
-        width: calc(50% - 40px);
-    }
-    .main-section {
-        padding: 20px 20px;
-    }
-} */
-
-/* @media (max-width: 480px) {
-    .card {
-        width: calc(100% - 40px);
-    }
-
-    header {
-        height: 40px;
-        padding-top: 25px;
-    }
-
-    .logo {
-        display: none;
-    }
-    .main-section {
-        padding: 20px 20px;
-    }
-
-} */
