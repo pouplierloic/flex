@@ -109,10 +109,12 @@ header {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Animation de transition de couleur */
+    transition: transform 0.3s ease; /* Animation de transition au survol */
 }
 
 .cta:hover {
     background-color: #0056b3; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Agrandissement léger au survol */
 }
 
 .cta-secondary {
@@ -124,10 +126,13 @@ header {
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Animation de transition de couleur */
+    transition: transform 0.3s ease; /* Animation de transition au survol */
 }
 
 .cta-secondary:hover {
     background-color: #dcedfc; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Agrandissement léger au survol */
+
 }
 
 .hero-image {
