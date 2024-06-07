@@ -4,132 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test flexbox</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/Flexbox.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="icon" type="image/png" href="./assets/logoUX.png ">
+    <link rel="icon" type="image/png" href="./assets/logoUX.png">
 </head>
 
 <body>
 
     <!-- Navbar section -->
-    <header>    
+    <header>
         <nav class="navbar">
-            <a href="./index.html" class="lien-logo">  
+            <a href="./index.html" class="lien-logo">
                 <div class="logo">
-                <img src="./assets/logoUX.png" alt="Logo">
-                <p>
-                    Loïc Pouplier
-                </p>
+                    <img src="./assets/logoUX.png" alt="Logo">
+                    <p>Loïc Pouplier</p>
                 </div>
             </a>
-          
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Welcome to My Portfolio</h1>
                 <h2>Discover my projects and more</h2>
-                <button class="cta">Learn More</button>
-                <button class="cta-secondary">Contact</button>
+                <div class="cta-container">
+                    <button class="cta">Book a call</button>
+                    <button class="cta-secondary">About me</button>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="./assets/profile-pic(2).png " alt="Hero Image">
+                <img src="./assets/profile-pic(2).png" alt="Hero Image">
             </div>
         </div>
     </section>
 
-    <!-- Section principale avec les cards -->
-    <section class="main-section">
-
+    <!-- Main section with project cards -->
+    <section class="main-section" id="projects">
         <div class="card">
-            <div class="card-img">
-                <img src="./assets/mockup1.jpg" alt="chaussure jaune" class="chaussure-img">
+            <div class="card-img-container">
+                <img src="./assets/mockup1.jpg" alt="EcoShop App Redesign" class="card-img">
             </div>
             <div class="card-body">
-                <h3>
-                    EcoShop App Redesign
-                </h3>
-                <p>
-                    Crafting an intuitive and aesthetically pleasing user experience for the "EcoShop" e-commerce app, emphasizing sustainability and ease of use to enhance conversion rates and user engagement.
-                </p>
+                <h3>EcoShop App Redesign</h3>
+                <p>Crafting an intuitive and aesthetically pleasing user experience for the "EcoShop" e-commerce app, emphasizing sustainability and ease of use to enhance conversion rates and user engagement.</p>
                 <div class="card-cta-container">
                     <button class="card-cta">Learn more</button>
                 </div>
             </div>
         </div>
-
         <div class="card">
-            <div class="card-img"> 
-                <img src="./assets/mockup2.jpg"
-                    alt="chaussure jaune" class="chaussure-img">
+            <div class="card-img-container">
+                <img src="./assets/mockup2.jpg" alt="Data Dashboard" class="card-img">
             </div>
             <div class="card-body">
-                <h3>
-                    Data Dashboard
-                </h3>
-                <p>
-                    Developing a clear and functional user interface for a data analysis dashboard, facilitating visualization and interpretation of key metrics for decision-makers.
-                </p>
+                <h3>Data Dashboard</h3>
+                <p>Developing a clear and functional user interface for a data analysis dashboard, facilitating visualization and interpretation of key metrics for decision-makers.</p>
                 <div class="card-cta-container">
                     <button class="card-cta">Learn more</button>
                 </div>
             </div>
         </div>
-
         <div class="card">
-            <div class="card-img">
-                <img src="./assets/mockup3.jpg"
-                    alt="chaussure jaune" class="chaussure-img">
+            <div class="card-img-container">
+                <img src="./assets/mockup3.jpg" alt="Music Festival Website" class="card-img">
             </div>
             <div class="card-body">
-                <h3>
-                    Music Festival Website
-                </h3>
-                <p>
-                    Designing a dynamic and responsive website for a music festival, providing seamless navigation and interactive features such as event calendars, artist profiles, and ticket purchase options.
-                </p>
+                <h3>Music Festival Website</h3>
+                <p>Designing a dynamic and responsive website for a music festival, providing seamless navigation and interactive features such as event calendars, artist profiles, and ticket purchase options.</p>
                 <div class="card-cta-container">
                     <button class="card-cta">Learn more</button>
                 </div>
             </div>
         </div>
-
         <div class="card">
-            <div class="card-img">
-                <img src="./assets/mockup4.jpg"
-                    alt="chaussure jaune" class="chaussure-img">
+            <div class="card-img-container">
+                <img src="./assets/mockup4.jpg" alt="Fitness App" class="card-img">
             </div>
             <div class="card-body">
-                <h3>
-                    Fitness App
-                </h3>
-                <p>
-                    Crafting the design of a fitness app offering personalized workout programs, progress tracking, and real-time coaching integrations, with an engaging and motivating interface for users.
-                </p>
+                <h3>Fitness App</h3>
+                <p>Crafting the design of a fitness app offering personalized workout programs, progress tracking, and real-time coaching integrations, with an engaging and motivating interface for users.</p>
                 <div class="card-cta-container">
                     <button class="card-cta">Learn more</button>
                 </div>
             </div>
         </div>
-       
     </section>
 
-    <!-- Footer en bas du site -->
+    <!-- Footer section -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+            <p>&copy; 2024 Mon Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
 </body>
+
 </html>

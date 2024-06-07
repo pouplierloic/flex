@@ -1,43 +1,47 @@
+/* Styles globaux */
 body {
+    /* Utilisation de la police Roboto et une couleur de fond */
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-
-/*---------- Navbar ---------- */
+/* Barre de navigation */
 header {
+    /* Style de l'en-tête */
     background-color: #ffffff;
     padding: 2px 90px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); /* Fond de la barre de navigation */
 }
 
+/* Logo */
 .lien-logo {
     text-decoration: none;
     color: #000000;
 }
 
-.logo{
+.logo {
     display: flex;
 }
 
 .logo img {
-    width: 70px;
-    /* Ajuste la taille du logo */
+    width: 70px; /* Taille du logo */
 }
 
 .logo p {
     margin-top: 25px;
 }
 
+/* Liens de navigation */
 .nav-links {
     list-style: none;
     padding: 0;
@@ -46,24 +50,22 @@ header {
 }
 
 .nav-links li {
-    margin-left: 20px;
-    /* Ajoute de l'espace entre les liens */
+    margin-left: 20px; /* Espace entre les liens */
 }
 
 .nav-links li a {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Animation de transition de couleur */
 }
 
 .nav-links li a:hover {
-    color: #007BFF;
-    /* Change la couleur au hover */
+    color: #007BFF; /* Changement de couleur au survol */
 }
 
-/*--------- Hero Section ---------*/
+/* Section héroïque */
 .hero-section {
-    background-color: #F2F9FF;
+    background-color: #F2F9FF; /* Fond de la section héroïque */
     color: #000000;
     padding: 30px 100px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -81,12 +83,12 @@ header {
 }
 
 .hero-text h1 {
-    font-size: 3.5em;
+    font-size: 3.5em; /* Taille du titre principal */
     margin-bottom: 10px;
 }
 
 .hero-text h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Taille du sous-titre */
     margin-bottom: 20px;
     font-weight: normal;
     color: #555555;
@@ -97,33 +99,35 @@ header {
     gap: 10px;
 }
 
+/* Boutons d'appel à l'action */
 .cta {
     background-color: #007BFF;
     color: white;
+    font-size: large;
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Animation de transition de couleur */
 }
 
 .cta:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Changement de couleur au survol */
 }
 
 .cta-secondary {
     background-color: #F2F9FF;
     color: #007BFF;
     border: 1px solid #007BFF;
-    padding: 7px 11px;
-    border-radius: 5px;
+    font-size: large;
+    padding: 12px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Animation de transition de couleur */
 }
 
 .cta-secondary:hover {
-    background-color: #007BFF;
-    color: white;
+    background-color: #dcedfc; /* Changement de couleur au survol */
 }
 
 .hero-image {
@@ -135,50 +139,44 @@ header {
     max-width: 350px;
 }
 
-
-
-/* ----------Section avec les cards ----------*/
+/* Section principale avec les cartes */
 .main-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
-    /* justify-content: space-around;*/
-    padding: 20px 50px; 
+    padding: 20px 50px;
 }
 
+/* Cartes */
 .card {
     background-color: #fff;
     display: flex;
     flex-flow: column wrap;
     margin: 20px 5px;
-    transition: transform 0.3s ease;
-    /* Ajoute une transition pour l'effet de hover */
+    transition: transform 0.3s ease; /* Animation de transition au survol */
     border-radius: 8px;
-    padding: 1rem; 
+    padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .card:hover {
-    transform: scale(1.05);
-    /* Agrandit légèrement la card au hover */
+    transform: scale(1.05); /* Agrandissement léger au survol */
+}
+
+.card-img-container {
+    width: 100%;
 }
 
 .card-img {
     width: 100%;
-}
-
-.chaussure-img {
-    width: 100%;
     height: 150px;
-    object-fit: cover;
-    /* Assure que l'image s'ajuste bien */
+    object-fit: cover; /* Ajustement de l'image */
     border-radius: 8px;
 }
 
 .card-body {
     width: 100%;
-    padding: 10px ;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -187,7 +185,6 @@ header {
     margin: 10px 0;
     font-size: 1.2em;
     font-weight: 500;
-    /* Ajuste la taille de la police du titre si nécessaire */
 }
 
 .card-body p {
@@ -195,9 +192,7 @@ header {
     font-size: 0.9em;
     text-align: justify;
     margin-right: 30px;
-
-    color :#555555
-    /* Ajuste la taille de la police de la description si nécessaire */
+    color: #555555;
 }
 
 .card-cta-container {
@@ -209,19 +204,19 @@ header {
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 10px 14px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Animation de transition de couleur */
 }
 
 .card-cta:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Changement de couleur au survol */
 }
 
-/*------------ Footer Section -----------*/
+/* Section du pied de page */
 .footer {
-    background-color: #F2F9FF;
+    background-color: #F2F9FF; /* Fond du pied de page */
     color: #000000;
     padding: 20px 0;
     text-align: center;
@@ -254,9 +249,9 @@ header {
 .footer-links a {
     text-decoration: none;
     color: #000000;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Animation de transition de couleur */
 }
 
 .footer-links a:hover {
-    color: #007BFF;
+    color: #007BFF; /* Changement de couleur au survol */
 }
