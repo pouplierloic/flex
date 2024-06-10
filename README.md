@@ -38,7 +38,7 @@ Vous pouvez voir une démo en direct du projet [ici](https://flex-one-lake.verce
 ## Auteur
 
 - **Nom** : Loïc Pouplier
-- **LinkedIn** : [LinkedIn Profile](https://www.linkedin.com/in/lo%C3%AFc-pouplier-b9994514b/)
+- **LinkedIn** : [Loïc Pouplier](https://www.linkedin.com/in/lo%C3%AFc-pouplier-b9994514b/)
 
 ## Contribuer
 
